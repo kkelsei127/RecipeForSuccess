@@ -71,12 +71,14 @@ a {
     padding: 50px;
     height: 200px;
     color: #260A36;
+    position: relative;
 }
 
 .ingredients-main img{
     display: block;
     margin: 10px auto;
     max-width: 750px;
+    justify-content: center;
 }
 
 .ingredients-samples img{
@@ -86,6 +88,7 @@ a {
     padding-left: 10px;
 }
 
+
 section p {
     font-size: 20px;
     float: inline-start;
@@ -94,11 +97,11 @@ section p {
     padding-left: 200px;
 }
 
-#work-sample{
+#work-sample {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 1000px;
+    justify-content: center;
 }
 
 #work-sample img{
