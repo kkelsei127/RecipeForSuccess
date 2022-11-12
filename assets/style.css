@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: #31354a;
     margin: 0;
 }
 
@@ -20,7 +20,6 @@ body {
 
 /*HEADER*/
 header {
-    background-color: gray;
     /*changes the thickness of the header, 40px is good*/
     padding: 50px;    
 }
@@ -170,7 +169,7 @@ footer {
     padding: 30px;
     font-family: Verdana, Tahoma, sans-serif;
     text-align: center;
-    background-color: #260A36;
+    background-color: #1a1f34;
     color: #8a23c2;
     width: 100%;   
 }
@@ -180,7 +179,7 @@ footer {
     bottom: 0;
 }
 
-/* samples are split into two columns at 992px or smaller */
+/* images are split into two columns at 992px or smaller */
 /*
 @media screen and (max-width: 992px) {
     #work {
@@ -188,7 +187,7 @@ footer {
     }
 }
 
-/* samples are stacked on top of each other at 768px or smaller */
+/* images are stacked on top of each other at 768px or smaller */
 /*
 @media screen and (max-width: 768px) {
     #work {
