@@ -3,12 +3,11 @@
 /*UNIVERSAL SELCTOR HERE*/
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
     background-color: #541575;
+    margin: 0;
 }
 
 #page-container {
@@ -24,36 +23,36 @@ body {
     /*TITLE THE CODING CHEF*/
 header {
     background-color: #41115c;
-    padding: 20px;    
+    /*changes the thickness of the header, 40px is good*/
+    padding: 50px;    
 }
 
-header h1 {
+h1 {
     display: inline-block;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     padding-top: 15px;
 }
 
-header h1 .coding{
+h1 .coding{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 4000;
 }
 
-header nav {
+nav {
     padding-top: 15px;
-    margin-right: 20px;
     float: right;
+    font-size: 20px;
 }
 
-header nav ul {
+nav ul {
     background-color: #41115c;
-    color: #8a23c2;
     font-family: 'Veranda', 'Andale Mono', 'Freemono';
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -110,32 +109,8 @@ section p {
     min-block-size: 100px;
     border-radius: 24px;
 }
-/*BACKGROUND COLOR #541575*/
-    /*SECTION IDENTIFIERS: ABOUT ME, WORK, CONTACT ME*/
-        /*FORMATTING FOR SECTION HEADERS TO POSITION TO THE LEFT*/
-        /*FONT GEORGIA, COURIER, TIMES*/
-        /*FONT SIZE BIGGER THAN P TAG, SMALLER THAN NAV H2?*/
-        /*FONT COLOR #260A36*/
-    /*CLOSE SECTION IDENTIFIERS*/
-    /*P TAGS*/
-        /*FORMATTING TO THE RIGHT PARALLEL TO SECTION HEADER*/
-        /*FONT SIZE H3*/
-        /*ABOUT ME FONT TO BE ORIENTATED TO THE LEFT OF THE BOX, FLEX BOX??*/
-    /*CLOSE P TAGS*/
-    /*I ASSUME SOME UL/LI ORDERING HERE OR ABOVE P TAG SECTION*/
-    /*IMG FORMATTING HERE*/
-    /*CONTACT ME FORM HERE*/
-        /*CENTERED*/
-        /*FONT COLOR #8A23C2*/
-        /*FONT ARIAL*/
-    /*LIST EMAIL, GIT HUB, ETC*/
-        /*CENTER UNDER CONTACT FORM*/
-        /*FONT COLOR #8A23C2 IS THIS REDUNDENT CODE?*/
-    /*DONE WITH CONTACT*/
-/*DONE WITH MAIN*/
 
 /*FOOTER*/
-
 footer {
     padding: 30px;
     clear: both;
@@ -152,3 +127,17 @@ footer {
 }
     
 
+/* samples are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    #work {
+      width: 50%;
+    }
+}
+
+/* sample are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+    #work {
+      width: 100%;
+    }
+  }
+  
