@@ -133,6 +133,10 @@ main{
     justify-content: space-around;
 }
 
+.placeholder-img{
+    width: 200px;
+    height: 200px;
+}
 .links{
     background-color: red;
     display: flex;
