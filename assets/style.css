@@ -63,6 +63,11 @@ a {
     color: #260A36;
 }
 
+.ingredients-main img{
+    display: block;
+    margin: 10px auto;
+    max-width: 750px;
+}
 section p {
     font-size: 20px;
     float: inline-start;
