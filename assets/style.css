@@ -25,6 +25,21 @@ header {
     padding: 50px;    
 }
 
+.dot{
+    height: 150px;
+    width: 150px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.overlay{
+    position:absolute;
+    z-index: 99999;
+    top: 50;
+    left:0;
+    width: 175px;
+}
 h1 {
     display: inline-block;
     font-size: 35px;
@@ -46,12 +61,13 @@ nav {
     display: flex;
 }
 
-nav a{
-    padding: 15px 20px;
+nav a {
+    padding: 30px 45px;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
+    text-decoration: none;
 }
 
 /*MAIN*/
@@ -118,6 +134,14 @@ main{
     justify-content: space-around;
 }
 
+.links{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+    justify-content: space-around;
+}
+
 @media all and (min-width:800px) {
     .work-main {flex: 5 0px; }
     .aside-work {order: 1; }
@@ -141,9 +165,7 @@ main{
     .contact-main {order: 2; }
 }
 
-
 /*FOOTER*/
-    /*DONT TRY TO COMBINE ~footer~ AND ~#footer~, doesnt work like that*/
 footer {
     padding: 30px;
     font-family: Verdana, Tahoma, sans-serif;
