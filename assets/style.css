@@ -62,6 +62,43 @@ main{
     flex-wrap: wrap;
 }
 
+/*this is the parent container for about section*/
+.about-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    background-color: aqua;
+}
+
+/* this pushes header and footer of about section to fill the screen horizontally*/
+.about-wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+
+}
+
+/*this orientates the lorem ipsum text*/
+.about-main {
+    text-align: left;
+    background-color: bisque;
+}
+
+.aside-about{
+    background-color: pink;
+}
+
+@media all and (min-width: 600px) {
+    .aside {flex: 1 0 0; }
+}
+
+/*this positions everything as it needs to be, dont touch*/
+@media all and (min-width:800px) {
+    .about-main {flex: 3 0px; }
+    .aside-about {order: 1; }
+    .about-main {order: 2; }
+    .about-footer {order: 4; }
+}
+/*
 a {
     color: #260A36;
     text-decoration: none;
@@ -111,6 +148,7 @@ section p {
     min-block-size: 100px;
     border-radius: 24px;
 }
+*/
 
 /*FOOTER*/
     /*DONT TRY TO COMBINE ~footer~ AND ~#footer~, doesnt work like that*/
@@ -133,6 +171,7 @@ footer {
     
 
 /* samples are split into two columns at 992px or smaller */
+/*
 @media screen and (max-width: 992px) {
     #work {
       width: 50%;
@@ -140,6 +179,7 @@ footer {
 }
 
 /* samples are stacked on top of each other at 768px or smaller */
+/*
 @media screen and (max-width: 768px) {
     #work {
       width: 100%;
