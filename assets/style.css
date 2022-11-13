@@ -14,7 +14,8 @@ body {
     min-height: 100vh;
 }
 
-#content-wrap{
+/*PRETTY SURE I DONT NEED THIS, DELETE*/
+/*#content-wrap{
     padding-bottom: 2.5rem;
 }
 
