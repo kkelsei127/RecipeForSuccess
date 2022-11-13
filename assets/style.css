@@ -70,7 +70,7 @@ nav a {
     text-decoration: none;
 }
 
-/*THIS CREATES THE HOVER ELEMENT ON THE NAV BAR*/
+/*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
 .nav-bar{
     background-color: green;
 }
@@ -93,17 +93,14 @@ nav a {
     display: inline-block;
 }
 
-.nav-bar ul li:hover {
-    background: #555;
-}
-
 .nav-bar ul li:hover ul{
     display: block;
 }
 
 .nav-bar ul li ul {
     position: absolute;
-    width: 200px;
+    width: fit-content;
+    padding: 0 5px;
     display: none;
 }
 
@@ -116,8 +113,9 @@ nav a {
     display: block !important;
 }
 
+/*this changes color of hovered item*/
 .nav-bar ul li ul li:hover {
-    background: #666;
+    background: rgb(199, 41, 41);
 }
 
 /*MAIN*/
@@ -138,7 +136,7 @@ main{
     display:flex;
     flex-flow: row wrap;
     background-color: orange;
-    padding:5px;
+    padding-bottom: 10px;
     width: 100%;
 }
 .topics-wrapper > * {
@@ -163,7 +161,7 @@ main{
 /*this positions everything as it needs to be, dont touch*/
 @media all and (min-width:800px) {
     .about-main {flex: 3 0px; }
-    .aside-about {order: 1; }
+    .aside-left {order: 1; }
     .about-main {order: 2; }
 }
 
@@ -190,6 +188,7 @@ main{
     width: 200px;
     height: 200px;
 }
+
 .links{
     background-color: red;
     display: flex;
@@ -200,17 +199,10 @@ main{
 
 @media all and (min-width:800px) {
     .work-main {flex: 5 0px; }
-    .aside-work {order: 1; }
+    .aside-left {order: 1; }
     .work-main {order: 2; }
     .work-latest {order: 2; }
     .placeholder {order: 3;}
-}
-
-/*this positions everything as it needs to be, dont touch*/
-@media all and (min-width:800px) {
-    .contact-main {flex: 3 0px; }
-    .aside-about {order: 1; }
-    .contact-main {order: 2; }
 }
 
 /*FOOTER*/
@@ -228,19 +220,68 @@ footer {
     bottom: 0;
 }
 
-/* images are split into two columns at 992px or smaller */
-/*
+/*some headers are stacked on top of each other at 992px or smaller, images resized */
+
 @media screen and (max-width: 992px) {
-    #work {
-      width: 50%;
+    #page-container, .main-wrapper, .aside-work, .work-main, .work-latest, .horiseon, .placeholder{
+        flex: 100%;
+        flex-direction: column;
+        max-width: 992px;
+        background-color: sandybrown;
+        padding: 0;
+    }
+    nav {
+        padding: 0px;
+        float: right;
+        display: flex;
+    }
+    .aside-left {
+        order: -1;
+    }
+    .placeholder{
+        flex-direction: row;
+    }
+    .placeholder img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .horiseon{
+        padding-left: 10px;
+        width: 925px;
     }
 }
 
+
 /* images are stacked on top of each other at 768px or smaller */
-/*
+
 @media screen and (max-width: 768px) {
-    #work {
-      width: 100%;
+    #content-wrap, .main-wrapper, .aside-work, .about-main, .work-main, .work-latest, .horiseon, .placeholder{
+        flex: 100%;
+        flex-direction: column;
+        max-width: 745px;
+        background-color: wheat;
+        padding: 0;
     }
-  }
+    .aside-left {
+        order: -1;
+        text-align: center;
+     }
+    .placeholder img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-bar {
+        padding: 0px;
+        display: flex;
+    }
+    .nav-bar a{
+        color: black;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+}
+
   
