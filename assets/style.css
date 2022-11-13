@@ -117,13 +117,15 @@ main{
 }
 
 /*WORK*/
-.work-main {
-    text-align: left;
-    background-color: bisque;
-}
 .aside-work{
     background-color: pink;
 }
+
+.horiseon {
+    width: 1000px;
+    height: 550px;
+}
+
 
 .placeholder{
     background-color: red;
@@ -151,14 +153,6 @@ main{
     .work-main {order: 2; }
     .work-latest {order: 2; }
     .placeholder {order: 3;}
-}
-
-/*CONTACT*/
-
-/*this orientates the contact*/
-.contact-main {
-    text-align: center;
-    background-color: bisque;
 }
 
 /*this positions everything as it needs to be, dont touch*/
