@@ -70,6 +70,56 @@ nav a {
     text-decoration: none;
 }
 
+/*THIS CREATES THE HOVER ELEMENT ON THE NAV BAR*/
+.nav-bar{
+    background-color: green;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+.nav-bar ul{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+}
+
+.nav-bar ul li:hover {
+    background: #555;
+}
+
+.nav-bar ul li:hover ul{
+    display: block;
+}
+
+.nav-bar ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+.nav-bar ul li ul li{
+    background: #555; 
+    display: block; 
+}
+
+.nav-bar ul li ul li a {
+    display: block !important;
+}
+
+.nav-bar ul li ul li:hover {
+    background: #666;
+}
+
 /*MAIN*/
 main{
     display: flex;
