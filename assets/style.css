@@ -22,7 +22,36 @@ body {
 /*HEADER*/
 header {
     /*changes the thickness of the header, 40px is good*/
-    padding: 50px;    
+    padding: 50px; 
+}
+
+.header-container{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+/*this is the entire left part of the header*/
+.icon{
+    width: 450px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: brown;
+}
+
+/*this is the container for the text*/
+.text{
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .dot{
@@ -31,13 +60,16 @@ header {
     background-color: palevioletred;
     border-radius: 50%;
     display: inline-block;
+    left:35px;
+    position: relative;
 }
 
+/*this is the bitmoji*/
 .overlay{
-    position:absolute;
+    position: relative;
     z-index: 99999;
     top: 50;
-    left:0;
+    right: 50px;
     width: 175px;
 }
 h1 {
@@ -54,15 +86,14 @@ h1 .coding{
     font-weight: 4000;
 }
 
-/*HAPPY WITH NAV BAR DO NOT TOUCH*/
-nav {
-    padding: 15px;
-    float: right;
-    display: flex;
+.nav {
+    background-color: blue;
+    width: fit-content;
+    padding: 25px;
 }
 
-nav a {
-    padding: 30px 45px;
+.nav-bar a {
+    padding: 20px;
     color: black;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -249,6 +280,24 @@ footer {
     .horiseon{
         padding-left: 10px;
         width: 925px;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon{
+        display: flex;
+        flex-direction: column;
+        background-color: purple;
+    }     
+    .icon, .nav{
+        display: block;
+        margin: 0 auto;
+        padding: auto;
+    }
+    .overlay{
+        position: inherit;
     }
 }
 
