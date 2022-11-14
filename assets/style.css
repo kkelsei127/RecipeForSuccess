@@ -99,7 +99,8 @@ h1 .kelsei{
 
 /*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
 .nav-bar a{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: palevioletred;
     color: #93c9c9;
     font-size: 20px;
     padding: 15px;
@@ -168,15 +169,21 @@ main{
 /*this orientates the lorem ipsum text*/
 .about-main {
     text-align: left;
+    padding: 30px;
 }
 
 .aside-left{
-    text-align: center;
+    text-align: right;
     margin: auto;
     font-size: 32px;
     font-weight: bolder;
     color: #0FC2C0;
     font-family: serif;
+    border-style: groove;
+    border-color: palevioletred;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 @media all and (min-width: 600px) {
@@ -192,7 +199,7 @@ main{
 
 /*WORK*/
 .horiseon {
-    width: 1000px;
+    width: 900px;
     height: 550px;
 }
 
