@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #31354a;
+    background-color: #121B26;
     margin: 0;
 }
 
@@ -12,11 +12,6 @@ body {
 #page-container {
     position: relative;
     min-height: 100vh;
-}
-
-/*PRETTY SURE I DONT NEED THIS, DELETE*/
-/*#content-wrap{
-    padding-bottom: 2.5rem;
 }
 
 /*HEADER*/
@@ -29,7 +24,6 @@ header {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    background-color: yellow;
 }
 
 /*this is the entire left part of the header*/
@@ -40,12 +34,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    background-color: brown;
 }
 
 /*this is the container for the text*/
 .text{
-    background-color: plum;
     display: flex;
     flex-direction: column;
     line-height: 15px;
@@ -84,10 +76,14 @@ h1 .coding{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 4000;
+    color: #2ABFBF;
 }
 
+h1 .kelsei{
+    font-family: monospace;
+    color: #2ABFBF;
+}
 .nav {
-    background-color: blue;
     width: fit-content;
     padding: 25px;
 }
@@ -102,13 +98,9 @@ h1 .coding{
 }
 
 /*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
-.nav-bar{
-    background-color: green;
-}
-
 .nav-bar a{
     text-decoration: none;
-    color: white;
+    color: #93c9c9;
     font-size: 20px;
     padding: 15px;
     display:inline-block;
@@ -160,13 +152,11 @@ main{
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
-    background-color: aqua;
 }
 
 .topics-wrapper{
     display:flex;
     flex-flow: row wrap;
-    background-color: orange;
     padding-bottom: 10px;
     width: 100%;
 }
@@ -178,11 +168,15 @@ main{
 /*this orientates the lorem ipsum text*/
 .about-main {
     text-align: left;
-    background-color: bisque;
 }
 
 .aside-left{
-    background-color: pink;
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #0FC2C0;
+    font-family: serif;
 }
 
 @media all and (min-width: 600px) {
@@ -197,18 +191,12 @@ main{
 }
 
 /*WORK*/
-.aside-work{
-    background-color: pink;
-}
-
 .horiseon {
     width: 1000px;
     height: 550px;
 }
 
-
 .placeholder{
-    background-color: red;
     display: flex;
     flex-direction: row;
     flex: 1 0 0;
@@ -221,11 +209,11 @@ main{
 }
 
 .links{
-    background-color: red;
     display: flex;
     flex-direction: row;
     flex: 1 0 0;
     justify-content: space-around;
+    padding: 25px;
 }
 
 @media all and (min-width:800px) {
@@ -241,8 +229,8 @@ footer {
     padding: 30px;
     font-family: Verdana, Tahoma, sans-serif;
     text-align: center;
-    background-color: #1a1f34;
-    color: #8a23c2;
+    background-color: #0a1722;
+    color: #2ABFBF;
     width: 100%;   
 }
 
@@ -289,7 +277,6 @@ footer {
     .icon{
         display: flex;
         flex-direction: column;
-        background-color: purple;
     }     
     .icon, .nav{
         display: block;
