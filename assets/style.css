@@ -99,12 +99,13 @@ h1 .kelsei{
 
 /*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
 .nav-bar a{
-    text-decoration: underline;
-    text-decoration-color: palevioletred;
     color: #93c9c9;
     font-size: 20px;
     padding: 15px;
     display:inline-block;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: palevioletred;
 }
 
 .nav-bar ul{
@@ -135,11 +136,12 @@ h1 .kelsei{
 
 .nav-bar ul li ul li a {
     display: block !important;
+    text-decoration: none;
 }
 
 /*this changes color of hovered item*/
 .nav-bar ul li ul li:hover {
-    background: rgb(199, 41, 41);
+    background: palevioletred;
 }
 
 /*MAIN*/
@@ -179,7 +181,8 @@ main{
     font-weight: bolder;
     color: #0FC2C0;
     font-family: serif;
-    border-style: groove;
+    border-style: solid;
+    border-width: 5px;
     border-color: palevioletred;
     border-left: none;
     border-top: none;
@@ -199,20 +202,28 @@ main{
 
 /*WORK*/
 .horiseon {
-    width: 900px;
+    width: 800px;
     height: 550px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: palevioletred;
 }
 
 .placeholder{
     display: flex;
     flex-direction: row;
     flex: 1 0 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
 }
 
 .placeholder-img{
     width: 200px;
     height: 200px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: palevioletred;
+    border-radius: 25px;
 }
 
 .links{
