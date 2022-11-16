@@ -99,11 +99,13 @@ h1 .kelsei{
 
 /*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
 .nav-bar a{
-    text-decoration: none;
     color: #93c9c9;
     font-size: 20px;
     padding: 15px;
     display:inline-block;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: palevioletred;
 }
 
 .nav-bar ul{
@@ -134,11 +136,12 @@ h1 .kelsei{
 
 .nav-bar ul li ul li a {
     display: block !important;
+    text-decoration: none;
 }
 
 /*this changes color of hovered item*/
 .nav-bar ul li ul li:hover {
-    background: rgb(199, 41, 41);
+    background: palevioletred;
 }
 
 /*MAIN*/
@@ -168,15 +171,22 @@ main{
 /*this orientates the lorem ipsum text*/
 .about-main {
     text-align: left;
+    padding: 30px;
 }
 
 .aside-left{
-    text-align: center;
+    text-align: right;
     margin: auto;
     font-size: 32px;
     font-weight: bolder;
     color: #0FC2C0;
     font-family: serif;
+    border-style: solid;
+    border-width: 5px;
+    border-color: palevioletred;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 @media all and (min-width: 600px) {
@@ -192,20 +202,28 @@ main{
 
 /*WORK*/
 .horiseon {
-    width: 1000px;
+    width: 800px;
     height: 550px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: palevioletred;
 }
 
 .placeholder{
     display: flex;
     flex-direction: row;
     flex: 1 0 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
 }
 
 .placeholder-img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: palevioletred;
+    border-radius: 25px;
 }
 
 .links{
@@ -216,6 +234,11 @@ main{
     padding: 25px;
 }
 
+.links, .links a {
+    font-size: 25px;
+    text-decoration: underline;
+    color: palevioletred;
+}
 @media all and (min-width:800px) {
     .work-main {flex: 5 0px; }
     .aside-left {order: 1; }
