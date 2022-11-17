@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-/*THIS KEEPS FOOTER IN PLACE, DO NOT TOUCH*/
+/*THIS KEEPS FOOTER IN PLACE*/
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -16,7 +16,7 @@ body {
 
 /*HEADER*/
 header {
-    /*changes the thickness of the header, 40px is good*/
+    /*changes the thickness of the header*/
     padding: 50px; 
 }
 
@@ -71,7 +71,7 @@ h1 {
     padding-top: 15px;
 }
 
-/*this is for the span class DO NOT TOUCH*/
+/*this is for the span classes*/
 h1 .coding{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -129,6 +129,7 @@ h1 .kelsei{
     display: none;
 }
 
+/*THIS IS THE DISPLAY FOR THE HOVERED LINK*/
 .nav-bar ul li ul li{
     background: #555; 
     display: block; 
@@ -172,8 +173,10 @@ main{
 .about-main {
     text-align: left;
     padding: 30px;
+    color: rgb(226, 222, 222);
 }
 
+/*THIS MAKES THE SECTION HEADERS*/
 .aside-left{
     text-align: right;
     margin: auto;
@@ -193,7 +196,7 @@ main{
     .aside {flex: 1 0 0; }
 }
 
-/*this positions everything as it needs to be, dont touch*/
+/*this positions everything as it needs to be*/
 @media all and (min-width:800px) {
     .about-main {flex: 3 0px; }
     .aside-left {order: 1; }
@@ -223,7 +226,6 @@ main{
     flex-direction: row;
     flex: 1 0 0;
     justify-content: space-evenly;
-    
 }
 
 .placeholder-img{
@@ -365,6 +367,9 @@ footer {
         font-size: 15px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-decoration: none;
+    }
+    .about-main {
+        color: palevioletred;
     }
     .aside-left {
         order: -1;
