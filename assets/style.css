@@ -209,6 +209,15 @@ main{
     border-color: palevioletred;
 }
 
+.horiseon-text{
+    position: absolute;
+    background-color: #63b1af;
+    color: #0a1722;
+    padding: 15px 35px;
+    border-style: solid;
+    border-color: palevioletred;
+}
+
 .placeholder{
     display: flex;
     flex-direction: row;
@@ -224,6 +233,17 @@ main{
     border-radius: 5px;
     border-color: palevioletred;
     border-radius: 25px;
+}
+
+
+.image-text{
+    position: absolute;
+    background-color: #63b1af;
+    color: #0a1722;
+    padding: 15px 5px;
+    border-radius: 25px  25px 0 0;
+    border-style: solid;
+    border-color: palevioletred;
 }
 
 .links{
