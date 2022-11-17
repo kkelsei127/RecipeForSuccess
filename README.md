@@ -40,7 +40,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ![tabletView](./assets/tabletView.png)
 
 ## Link to deployed site
-
+https://kkelsei127.github.io/recipeForSuccess/
 
 ## License
 
