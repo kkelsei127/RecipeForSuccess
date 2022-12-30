@@ -4,19 +4,16 @@
 }
 
 body {
-    background-color: #121B26;
+    background-color: #141e2a;
     margin: 0;
 }
 
-/*THIS KEEPS FOOTER IN PLACE*/
 #page-container {
     position: relative;
     min-height: 100vh;
 }
 
-/*HEADER*/
 header {
-    /*changes the thickness of the header*/
     padding: 50px; 
 }
 
@@ -41,9 +38,11 @@ header {
     display: flex;
     flex-direction: column;
     line-height: 15px;
+    align-items: baseline;
     position: absolute;
     bottom: 0;
     right: 0;
+    color: black;
 }
 
 .dot{
@@ -68,10 +67,8 @@ h1 {
     display: inline-block;
     font-size: 35px;
     font-weight: 600;
-    padding-top: 15px;
 }
 
-/*this is for the span classes*/
 h1 .coding{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -89,22 +86,20 @@ h1 .kelsei{
 }
 
 .nav-bar a {
-    padding: 20px;
+    padding: 30px;
     color: black;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
     text-decoration: none;
-}
+} */
 
 /*THIS CREATES THE HOVER ELEMENT ON THE NAV*/
-.nav-bar a{
+ .nav-bar a{
     color: #93c9c9;
     font-size: 20px;
-    padding: 15px;
     display:inline-block;
     padding-bottom: 20px;
-    text-decoration: underline;
     text-decoration-color: palevioletred;
 }
 
@@ -113,9 +108,16 @@ h1 .kelsei{
     margin: 0;
     padding: 0;
 }
-
+.nav-bar a:hover {
+    color:palevioletred;
+}
 .nav-bar ul li{
-    display: inline-block;
+    display: inline-block;    
+}
+
+.nav-bar ul li:hover {
+    background: #273a51; 
+    padding-right: 14px;
 }
 
 .nav-bar ul li:hover ul{
@@ -125,7 +127,6 @@ h1 .kelsei{
 .nav-bar ul li ul {
     position: absolute;
     width: fit-content;
-    padding: 0 5px;
     display: none;
 }
 
@@ -138,13 +139,21 @@ h1 .kelsei{
 .nav-bar ul li ul li a {
     display: block !important;
     text-decoration: none;
+    font-size: 20px;
+    width: fit-content;
+    padding: 15px;
 }
 
 /*this changes color of hovered item*/
 .nav-bar ul li ul li:hover {
     background: palevioletred;
-}
+    padding: 0;
+    color: black;
+} 
 
+.nav-bar ul li ul li a:hover{
+    color:black;
+}
 /*MAIN*/
 main{
     display: flex;
@@ -174,6 +183,7 @@ main{
     text-align: left;
     padding: 30px;
     color: rgb(226, 222, 222);
+    font-size: 18px;
 }
 
 /*THIS MAKES THE SECTION HEADERS*/
@@ -212,7 +222,7 @@ main{
     border-color: palevioletred;
 }
 
-.horiseon-text{
+.workText{
     position: absolute;
     background-color: #63b1af;
     color: #0a1722;
@@ -221,14 +231,14 @@ main{
     border-color: palevioletred;
 }
 
-.placeholder{
+.workExample{
     display: flex;
     flex-direction: row;
     flex: 1 0 0;
     justify-content: space-evenly;
 }
 
-.placeholder-img{
+.workImage{
     width: 300px;
     height: 300px;
     border-style: solid;
@@ -237,7 +247,7 @@ main{
     border-radius: 25px;
 }
 
-
+/*
 .image-text{
     position: absolute;
     background-color: #63b1af;
@@ -246,7 +256,7 @@ main{
     border-radius: 25px  25px 0 0;
     border-style: solid;
     border-color: palevioletred;
-}
+} */
 
 .links{
     display: flex;
@@ -285,7 +295,6 @@ footer {
 }
 
 /*some headers are stacked on top of each other at 992px or smaller, images resized */
-
 @media screen and (max-width: 992px) {
     #page-container, .main-wrapper, .aside-work, .work-main, .work-latest, .horiseon, .placeholder{
         flex: 100%;
@@ -307,17 +316,17 @@ footer {
     .aside-left p{
         color:black;
     }
-    .placeholder{
+    .workExample{
         flex-direction: row;
     }
-    .placeholder img{
+    .workImage{
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     .horiseon{
         padding-left: 10px;
-        width: 925px;
+        width: 920px;
     }
     .header-container{
         display: flex;
@@ -339,11 +348,10 @@ footer {
     .links, .links a{
         color: black;
     }
-}
+} 
 
 
-/* images are stacked on top of each other at 768px or smaller */
-
+/*images are stacked on top of each other at 768px or smaller*/
 @media screen and (max-width: 768px) {
     #content-wrap, .main-wrapper, .aside-work, .about-main, .work-main, .work-latest, .horiseon, .placeholder{
         flex: 100%;
@@ -376,18 +384,22 @@ footer {
         text-align: center;
         border-style: none;
      }
-    .placeholder img{
+    .workImage{
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .image-text{
+    .horiseon{
+        padding-left: 10px;
+        width: 680px;
+    }
+
+    /* .image-text{
         display: flex;
         margin-left: 29%;
         margin-right: 33%;
         width: 300px;
-    }
+    } */
 }
 
-  
