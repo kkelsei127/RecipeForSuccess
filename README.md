@@ -31,13 +31,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshots
 
-![deployedSiteTop](./assets/reciepeForSuccessTop.png)
+![deployedSiteTop](./images/reciepeForSuccessTop.png)
 
-![deployedSiteBottom](./assets/reciepeForSuccessBottom.png)
+![mobileView](./images/mobileView.png)
 
-![mobileView](./assets/mobileView.png)
-
-![tabletView](./assets/tabletView.png)
+![tabletView](./images/tabletView.png)
 
 ## Link to deployed site
 https://kkelsei127.github.io/recipeForSuccess/
