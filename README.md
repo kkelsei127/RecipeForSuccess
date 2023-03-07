@@ -29,6 +29,9 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
+## Usage
+Click around and enjoy yourself as you browse my latest creations, sample a few treats by clicking on their direct links located in the navigation bar or the photos!
+
 ## Screenshots
 
 ![deployedSiteTop](./images/reciepeForSuccessTop.png)
